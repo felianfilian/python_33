@@ -6,3 +6,7 @@ response.raise_for_status()
 longitude = response.json()["iss_position"]["longitude"]
 latitude = response.json()["iss_position"]["latitude"]
 print(f"{longitude} - {latitude}")
+
+timestamp = response.json()["timestamp"]
+print(timestamp)
+
