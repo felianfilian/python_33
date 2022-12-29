@@ -1,2 +1,3 @@
-import api_test
+# import api_test
+import kayne_quotes
 
