@@ -10,3 +10,6 @@ print(f"{longitude} - {latitude}")
 timestamp = response.json()["timestamp"]
 print(timestamp)
 
+
+response02 = requests.get(url="https://api.open-meteo.com/v1/dwd-icon?latitude=52.52&longitude=13.41&hourly=temperature_2m")
+elevation = response.json()["elevation"]
