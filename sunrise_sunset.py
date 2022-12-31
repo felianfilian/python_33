@@ -1,4 +1,5 @@
 import requests
+import datetime
 
 parameters = {
     "formatted": 0
@@ -10,3 +11,4 @@ response.raise_for_status()
 sunrise = response.json()["results"]["sunrise"]
 print(sunrise.split("T")[1].split(":")[0])
 
+print(datetime.datetime.now().hour)
