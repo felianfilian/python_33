@@ -16,7 +16,7 @@ print(f"{longitude} - {latitude}")
 longitude = float(longitude)
 latitude = float(latitude)
 
-if (MY_LONG > longitude - 5 and MY_LONG < longitude + 5) and (MY_LAT > latitude - 5 and MY_LAT < latitude + 5):
+if MY_LONG - 5 < longitude < MY_LONG + 5  and MY_LAT - 5 < latitude < MY_LAT + 5:
     print("its there")
 else:
     print("its NOT there")
